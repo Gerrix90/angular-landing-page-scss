@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'https://fonts.googleapis.com/css?family=Lato:100, 300, 400, 700, 900';
+@import 'vendor/icon-font.scss';
+
+// abstracts folder
+@import 'abstracts/variable.scss';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+
+// base folder
+@import 'base/animation';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/header';
+
+@import 'components/button';
+@import 'components/composition';
+@import 'components/feature-box';
+@import 'components/card';
+@import 'components/story';
+@import 'components/bg-video';
+@import 'components/form';
+
+@import 'pages/home';

@@ -1,0 +1,15 @@
+<section class="section-features">
+  <div class="row">
+    <div class="col-1-of-4" *ngFor="let feature of features">
+      <div class="feature-box">
+        <i class="feature-box__icon icon-{{ feature.icon }}"></i>
+        <h3 class="heading-tertiary u-margin-bottom-small">{{ feature.name}}</h3>
+        <p class="feature-box__text">
+          {{ feature.text}}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+

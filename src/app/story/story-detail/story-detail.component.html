@@ -1,0 +1,14 @@
+<div class="row" *ngFor="let story of stories">
+  <div class="story">
+    <figure class="story__shape">
+      <img src="{{ story.image }}" alt="{{ story.imageAlt}}" class="story__img"/>
+      <figcaption class="story__caption">
+        {{ story.name }}
+      </figcaption>
+    </figure>
+    <div class="story__text">
+      <h3 class="heading-tertiary u-margin-bottom-small">{{ story.heading }}</h3>
+      <p>{{ story.text}}</p>
+    </div>
+  </div>
+</div>

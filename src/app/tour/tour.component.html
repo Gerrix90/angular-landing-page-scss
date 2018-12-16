@@ -1,0 +1,34 @@
+<section class="section-tours">
+  <div class="u-center-text u-margin-bottom-big">
+    <h2 class="heading-secondary">Most popular tours</h2>
+  </div>
+  <div class="row">
+    <div class="col-1-of-3" *ngFor="let tour of tours; let i = index">
+      <div class="card">
+        <div class="card__side card__side--front">
+          <div class="card__picture" [ngStyle]="{'background-image':'linear-gradient(to right bottom, '+tour.color.light+', '+tour.color.dark+'), url(' + tour.front.backgroundImage + ')'}">&nbsp;</div>
+          <h4 class="card__heading">
+            <span class="card__heading-span card__heading-span--{{ i+1}}">{{ tour.name }}</span>
+          </h4>
+          <div class="card__details">
+            <ul>
+              <app-tour-detail [details]="tour.front"></app-tour-detail>
+            </ul>
+          </div>
+        </div>
+        <div class="card__side card__side--back card__side--back-{{ i+1}}">
+          <div class="card__cta">
+            <div class="card__price-box">
+              <p class="card__price-only">Only</p>
+              <p class="card__price-value">{{ tour.price }}</p>
+            </div>
+            <a href="#" class="btn btn--white">Book now!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="u-center-text u-margin-top-huge">
+    <a href="#" class="btn btn--green">Discover all tours</a>
+  </div>
+</section>
