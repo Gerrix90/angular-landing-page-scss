@@ -17,6 +17,7 @@ import { StoryService } from './services/story.service';
 import { BookingComponent } from './booking/booking.component';
 import { FooterComponent } from './footer/footer.component';
 import { FooterItemComponent } from './footer/footer-item/footer-item.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
 	declarations: [
@@ -30,7 +31,8 @@ import { FooterItemComponent } from './footer/footer-item/footer-item.component'
 		StoryDetailComponent,
 		BookingComponent,
 		FooterComponent,
-		FooterItemComponent
+		FooterItemComponent,
+		NavigationComponent
 	],
 	imports: [ BrowserModule, AppRoutingModule ],
 	providers: [ FeatureService, TourService, StoryService ],
