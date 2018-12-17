@@ -18,6 +18,7 @@ import { BookingComponent } from './booking/booking.component';
 import { FooterComponent } from './footer/footer.component';
 import { FooterItemComponent } from './footer/footer-item/footer-item.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
 	declarations: [
@@ -32,7 +33,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 		BookingComponent,
 		FooterComponent,
 		FooterItemComponent,
-		NavigationComponent
+		NavigationComponent,
+		PopupComponent
 	],
 	imports: [ BrowserModule, AppRoutingModule ],
 	providers: [ FeatureService, TourService, StoryService ],
