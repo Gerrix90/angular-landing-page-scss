@@ -4,7 +4,16 @@
 
 	&:not(:last-child) {
 		margin-bottom: $gutter-vertical;
+		@include screen(tab-port) {
+			margin-bottom: $gutter-vertical-small;
+		}
 	}
+
+	@include screen(tab-port) {
+		max-width: 50rem;
+		padding: 0 3rem;
+	}
+
 	@include clearfix;
 
 	// select elements that have class attribute begin with 'col'
@@ -16,6 +25,14 @@
 
 		&:not(:last-child) {
 			margin-right: $gutter-horizontal;
+			@include screen(tab-port) {
+				margin-right: 0;
+				margin-bottom: $gutter-vertical-small;
+			}
+		}
+
+		@include screen(tab-port) {
+			width: 100% !important;
 		}
 	}
 
