@@ -10,6 +10,12 @@
 	visibility: hidden;
 	transition: all .3s;
 
+	@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		background-color: rgba($color-black, .3);
+	}
+
 	&__content {
 		@include absCenter;
 		width: 75%;
@@ -40,7 +46,7 @@
 		width: 66.666667%;
 		display: table-cell;
 		vertical-align: middle;
-		padding: 3rem 5rem 0;
+		padding: 2rem 5rem;
 		@include screen(tab-port) {
 			width: 100%;
 			display: inline-block;
@@ -89,6 +95,11 @@
 	&:target &__content {
 		opacity: 1;
 		transform: translate(-50%, -50%) scale(1);
+
+		@include screen(tab-land) {
+			transform: translate(-50%, -50%) scale(0.8);
+		}
+
 		@include screen(mobile) {
 			transform: translate(-50%, -50%) scale(0.8);
 		}
