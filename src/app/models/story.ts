@@ -1,9 +1,7 @@
 export class Story {
-	constructor(
-		public heading?: string,
-		public text?: string,
-		public image?: string,
-		public imageAlt?: string,
-		public name?: string
-	) {}
+	heading: string;
+	text: string;
+	image: string;
+	imageAlt: string;
+	name: string;
 }
