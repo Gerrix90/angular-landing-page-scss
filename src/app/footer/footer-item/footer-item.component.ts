@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: [ './footer-item.component.css' ]
 })
 export class FooterItemComponent implements OnInit {
-	private footerList: string[];
+	public footerList: string[];
 	constructor() {
 		this.footerList = [ 'Company', 'Contact us', 'Careers', 'Privacy policy', 'Terms' ];
 	}
