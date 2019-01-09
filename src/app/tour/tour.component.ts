@@ -7,7 +7,7 @@ import { Tour } from '../models/tour';
 	templateUrl: './tour.component.html'
 })
 export class TourComponent implements OnInit {
-	private tours: Tour[];
+	public tours: Tour[];
 	constructor(private tourService: TourService) {
 		this.tours = tourService.getTours();
 	}

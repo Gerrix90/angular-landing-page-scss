@@ -7,7 +7,7 @@ import { Feature } from '../models/feature';
 	templateUrl: './feature.component.html'
 })
 export class FeatureComponent implements OnInit {
-	private features: Feature[] = [];
+	public features: Feature[] = [];
 	constructor(private featureService: FeatureService) {
 		this.features = featureService.getFeatures();
 	}
